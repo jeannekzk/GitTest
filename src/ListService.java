@@ -12,6 +12,11 @@ import java.util.stream.IntStream;
  * от транспортного средства
  */
 public class ListService {
+        Vehicle vehicle=new Car();
+        vehicle.move();
+        Car car=(Car) vehicle;
+        car.openDoor();
+
 
     public static List<Integer> numEven(int n) {
         return IntStream.rangeClosed(0, n).boxed().collect(Collectors.toList());
